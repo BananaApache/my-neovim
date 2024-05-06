@@ -21,4 +21,8 @@ function _G.copy_line_down()
     return vim.api.nvim_replace_termcodes("<Esc>:t.<CR>a", true, false, true)
 end
 
+-- run python files in tmux with cmd-shift-enter
+-- keymap.set("n", "<C-y>", ":!python3 %<CR>", { noremap = true })
+keymap.set("n", "<C-CR>", ":!python3 %<CR>", {desc = "test"})
+
 
